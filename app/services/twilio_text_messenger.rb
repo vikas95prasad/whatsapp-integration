@@ -6,8 +6,8 @@ class TwilioTextMessenger
   end
 
   def call
-    account_sid = 'ACa62fc943a33064f116fa0896943f0d4c'
-    auth_token = 'eff66a1c18dd9a7d9db922341757f733'
+    account_sid =''
+    auth_token = ''
     client = Twilio::REST::Client.new(account_sid, auth_token)
 
     message = client.messages.create(
